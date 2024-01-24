@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="mobile-menu">
+            <div class="logo">
+                <a href="index.html">Thusaraka</a>
+            </div>
+            <div class="mobile-menu">
+                <span class="menu-icon">&#9776;</span>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="AboutMe.html">About</a></li>
+                    <li class="nav-item"><a href="Projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="current" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <nav class="large-screen">
+            <div class="logo">
+                <a href="index.html">Thusaraka</a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="AboutMe.html">About</a></li>
+                <li class="nav-item"><a href="Projects.html">Projects</a></li>
+                <li class="nav-item"><a class="current" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <div class="wave-container">
+            <svg width="100%" height="100%" id="svg" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="50%" x2="100%" y2="50%">
+                        <stop offset="5%" stop-color="#9900ef"></stop>
+                        <stop offset="95%" stop-color="#4d4dbb"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient2" x1="0%" y1="50%" x2="100%" y2="50%">
+                        <stop offset="5%" stop-color="#9900ef"></stop>
+                        <stop offset="95%" stop-color="#4d4dbb"></stop>
+                    </linearGradient>
+                </defs>
+                <path transform="rotate(-90 720 295)" d="M 0,600 C 0,600 0,200 0,200 C 76.2870813397129,180.4019138755981 152.5741626794258,160.80382775119617 246,146 C 339.4258373205742,131.19617224880383 449.9904306220096,121.18660287081337 562,136 C 674.0095693779904,150.81339712918663 787.4641148325359,190.44976076555025 897,206 C 1006.5358851674641,221.55023923444975 1112.153110047847,213.01435406698565 1202,208 C 1291.846889952153,202.98564593301435 1365.9234449760766,201.49282296650716 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient1)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+                <path transform="rotate(-90 720 295)" d="M 0,600 C 0,600 0,400 0,400 C 69.68421052631578,387.07177033492826 139.36842105263156,374.14354066985646 240,377 C 340.63157894736844,379.85645933014354 472.2105263157896,398.49760765550235 567,421 C 661.7894736842104,443.50239234449765 719.7894736842106,469.8660287081341 822,461 C 924.2105263157894,452.1339712918659 1070.6315789473683,408.03827751196167 1181,392 C 1291.3684210526317,375.96172248803833 1365.6842105263158,387.98086124401914 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient2)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+            </svg>
+        </div>
+          
+        <h1 id="contact-heading">Contact Me</h1>
+        <section>
+            <h2>Newsletter Registration</h2>
+            <p>Subscribe to my newsletter for updates :)</p>
+            <form>
+                <label for="email-subscribe">Email:</label>
+                <input type="email" id="email-subscribe" name="email" placeholder="Enter your email" required>
+                <br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 id="form-heading">Contact Form</h2>
+            <p>Send me a message:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email-contact">Email:</label>
+                <input type="email" id="email-contact" name="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/thusaraka/"><img src="linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/box0de0ex"><img src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/thusaraka"><img src="instagram.png" alt="instagram"></a>
+            <a class="copyright" href="">Thusaraka &copy;</a>
+        </div>
+
+        <div class="social-icons-mobile">
+            <div>
+                <a href="https://www.linkedin.com/in/thusaraka/"><img src="linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/box0de0ex"><img src="github.png" alt="github"></a>
+                <a href="https://www.instagram.com/thusaraka"><img src="instagram.png" alt="instagram"></a>
+            </div>
+            <a class="copyright" href="">Thusaraka &copy;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
