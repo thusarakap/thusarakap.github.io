@@ -281,7 +281,7 @@ export default function Home() {
               </Card>
               <Card className="flex flex-col gap-4 p-6 transition-all hover:bg-muted">
                 <Image
-                  src="/111.png"
+                  src="/project3.png"
                   width={600}
                   height={400}
                   alt="Project 3"
