@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Navbar } from "@/components/component/navbar";
 import { Badge } from "@/components/ui/badge";
+import ScrollAnimation from "@/components/scroll-animation";
 import Head from "next/head";
 
 export default function Home() {
@@ -26,7 +27,8 @@ export default function Home() {
       <div className="flex flex-col min-h-screen bg-background text-foreground">
         <Navbar />
         <main className="flex-1">
-          <section id="hero" className="container mx-auto px-4 py-20 md:px-6">
+          <ScrollAnimation />
+          <section id="hero" className="container mx-auto px-4 py-20 md:px-6 heroanimation">
             <div className="grid gap-8 md:grid-cols-2 md:items-center">
               <div className="space-y-4">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
@@ -77,7 +79,7 @@ export default function Home() {
 
           <section
             id="about"
-            className="container mx-auto px-4 py-20 md:px-6 md:py-24 "
+            className="container mx-auto px-4 py-20 md:px-6 md:py-24 aboutanimation"
           >
             <div className="grid gap-8 md:grid-cols-2">
               <div>
@@ -119,7 +121,7 @@ export default function Home() {
           </section>
           <section
             id="skills"
-            className="container flex flex-col items-center justify-center gap-8 py-12 md:py-24"
+            className="container flex flex-col items-center justify-center gap-8 py-12 md:py-24 skillsanimation"
           >
             <div className="grid gap-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -196,14 +198,14 @@ export default function Home() {
                 <h3 className="text-lg font-semibold">Testing</h3>
                 <p className="text-muted-foreground">
                   Proficient in writing unit and integration tests using
-                  frameworks like Jest and Enzyme.
+                  frameworks like Jest and JUnit.
                 </p>
               </Card>
             </div>
           </section>
           <section
             id="projects"
-            className="container flex flex-col items-center justify-center gap-8 py-12 md:py-24"
+            className="container flex flex-col items-center justify-center gap-8 py-12 md:py-24 projectsanimation"
           >
             <div className="grid gap-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -307,7 +309,7 @@ export default function Home() {
                       prefetch={false}
                     >
                       View Project
-                      <ArrowRightIcon className="h-4 w-4" />
+                      <ArrowRightIcon className="h-4 w-4 " />
                     </Link>
                   </div>
                 </div>
@@ -315,7 +317,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="contact" className="py-12 md:py-24">
+          <section id="contact" className="py-12 md:py-24 contactanimation">
             <div className="container mx-auto px-4 md:px-6">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
