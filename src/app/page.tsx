@@ -313,6 +313,22 @@ export default function Home() {
                 </div>
               </Card>
             </div>
+            {/* Backlink Section */}
+            <div className="mt-10 text-center">
+              <p className="text-muted-foreground mb-2">
+                Visit my latest project
+              </p>
+              <Link
+                href="https://sites.google.com/view/vorma-ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 transition-colors"
+                prefetch={false}
+              >
+                VORMA AI Microsite
+                <ArrowRightIcon className="h-4 w-4" />
+              </Link>
+            </div>
           </section>
 
           <section id="contact" className="py-12 md:py-24">
